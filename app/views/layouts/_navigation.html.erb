@@ -13,8 +13,8 @@
             <li><%= link_to "My Profile", edit_registration_path(current_user)  %></li>
             <li><%= link_to "My Friends", my_friends_path  %></li>
           </ul>
-          <ul class="nav navbar-right col-md-4">
-            <li class="col-md-8 user-name text-right"></li>
+          <ul class="nav navbar-right col-md-8">
+            <li class="col-md-4 user-name text-right"></li>
                <i class="fa fa-user"></i>
                  <%= current_user.full_name.present? ? current_user.full_name : current_user.email %>
             <li class="col-md-4 logout"><%= link_to("logout", destroy_user_session_path,
